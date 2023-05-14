@@ -1,0 +1,19 @@
+.Layout {
+    display: flex;
+    flex-direction: column;
+
+
+    width: 100%;
+
+    font-family: 'Helvetica Neue', sans-serif;
+
+    background-color: #e0e0e0;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+    width: 90%;
+}
