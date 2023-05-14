@@ -1,11 +1,18 @@
-import styles from './Layout.module.css'
+import styles from './Layout.module.css';
 
-import {Outlet} from 'react-router-dom';
+import { Header } from '../Header/Header';
+import { Footer } from '../Footer/Footer';
 
-export const Layout = () =>{
+import { Outlet } from 'react-router-dom';
 
-  return <div className={styles.container}>
+export const Layout = () => {
 
-    <Outlet/>
-  </div>
-}
+  return (
+    <div className={styles.container}>
+      <Header />
+      <Outlet />
+      <Footer />
+    </div>
+  );
+
+};

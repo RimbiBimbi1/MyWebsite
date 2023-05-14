@@ -1,5 +1,10 @@
 import styles from './Home.module.css';
+import { AnimatedContentSector } from '../../components/AnimatedContentSector/AnimatedContentSector';
 
 export const Home = () => {
-  return <div></div>;
+  return <>
+    <AnimatedContentSector></AnimatedContentSector>
+    <AnimatedContentSector></AnimatedContentSector>
+    <AnimatedContentSector></AnimatedContentSector>
+  </>;
 };
