@@ -1,0 +1,27 @@
+.brightGradient{
+    background: rgb(255,200,56);
+    background: linear-gradient(135deg, rgba(255,200,56,1) 0%, rgba(255,68,175,1) 100%);
+
+    color: black;
+}
+
+
+.darkGradient{
+    background: rgb(255,200,56);
+    background: linear-gradient(270deg, rgb(0, 74, 173) 0%, rgb(24, 38, 63) 100%);
+
+    color: white;
+}
+
+.watermelon{
+    background: rgb(39,70,40);
+    /*background: linear-gradient(90deg, rgb(29, 61, 29) 50%, rgb(9, 58, 9) 50%);*/
+    background: linear-gradient(90deg, rgb(229, 204, 185) 50%, rgb(227, 197, 173) 50%);
+    /*background: linear-gradient(90deg, rgba(255,218,178,1) 20%, rgb(255, 214, 151) 30%, rgb(255, 214, 151) 70%, rgba(255,218,178,1) 80%);*/
+
+    background-repeat: repeat-x;
+    background-size: 5% auto;
+
+    color: black;
+}
+

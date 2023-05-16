@@ -1,0 +1,44 @@
+.worldKeepOnTurnin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*animation-name: worldKeepOnTurnin;*/
+    /*animation-duration: 3650ms;*/
+    /*animation-timing-function: linear;*/
+    /*animation-iteration-count: infinite;*/
+
+    rotate: 135deg;
+    transition: rotate 3s ease-in-out, scale 50ms linear;
+}
+
+.causeItWontBeTooLong{
+    rotate: 495deg;
+}
+
+.worldKeepOnTurnin:hover{
+    scale: 1.05;
+}
+
+.worldKeepOnTurnin,
+.worldKeepOnTurnin a,
+.worldKeepOnTurnin img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+@keyframes worldKeepOnTurnin{
+    from{
+        transform: rotate(135deg);
+    }
+    to{
+        transform: rotate(495deg);
+    }
+}
