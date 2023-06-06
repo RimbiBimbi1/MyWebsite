@@ -1,5 +1,6 @@
 import styles from './Home.module.css';
 import backgrounds from '../../common/backgrounds.module.css';
+import sectorStyles from '../../common/sector.module.css'
 import { AnvilAndHammer } from '../../animated/AnvilAndHammer/AnvilAndHammer';
 
 import photo from '../../images/photo.png';
@@ -21,9 +22,9 @@ export const Home = () => {
   const [hobbyHeight, setHobbyHeight] = useState(null);
 
   useEffect(() => {
-    setEducationHeight(educationRef.current.getBoundingClientRect().bottom+ window.scrollY);
-    setProjectsHeight(projectsRef.current.getBoundingClientRect().bottom+ window.scrollY);
-    setHobbyHeight(hobbyRef.current.getBoundingClientRect().bottom+ window.scrollY);
+    setEducationHeight(educationRef.current.getBoundingClientRect().bottom + window.scrollY);
+    setProjectsHeight(projectsRef.current.getBoundingClientRect().bottom + window.scrollY);
+    setHobbyHeight(hobbyRef.current.getBoundingClientRect().bottom + window.scrollY);
 
   }, []);
 
@@ -40,62 +41,70 @@ export const Home = () => {
 
 
   return <>
-    <div className={`${styles.HomeSector}`}>
-      <div className={`${styles.wide}`}>
+    <article className={`${sectorStyles.sector}`}>
+      <section className={`${sectorStyles.wide}`}>
         {/*<h3>O mnie</h3>*/}
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam autem consectetur delectus, deserunt
         dolorum expedita harum id iure labore, natus nemo neque nulla odio quia quis, repellendus vero? Atque esse
         fugiat ipsa laboriosam reiciendis? Aut expedita maiores maxime ullam vitae. Delectus dolorum esse maiores minus
         praesentium quod vitae voluptatem.
-      </div>
-      <div className={`${styles.narrow}`}>
+      </section>
+      <section className={`${sectorStyles.narrow}`}>
         <img className={styles.photo} src={photo} alt='Moje zdjęcie' />
-      </div>
-    </div>
+      </section>
+    </article>
 
-    <div ref={educationRef} className={`${styles.HomeSector} ${backgrounds.blueGradient} ${themeName==='dark'?backgrounds.dark:""}`}>
-      <div className={`${styles.narrow}`}>
+    <article ref={educationRef}
+             className={`${sectorStyles.sector} ${backgrounds.blueGradient} ${themeName === 'dark' ? backgrounds.dark : ''}`}>
+      <section className={`${sectorStyles.narrow}`}>
         <UmkLogo fired={fired === 1} />
-      </div>
-      <div className={`${styles.wide} ${styles.fading} ${fired === 1 ? '' : styles.faded}`}>
-        <h3>Wykształcenie</h3>
+      </section>
+      <section className={`${sectorStyles.wide} ${sectorStyles.fading} ${fired === 1 ? '' : sectorStyles.faded}`}>
+        <header>
+          <h3>Wykształcenie</h3>
+        </header>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam autem consectetur delectus, deserunt
         dolorum expedita harum id iure labore, natus nemo neque nulla odio quia quis, repellendus vero? Atque esse
         fugiat ipsa laboriosam reiciendis? Aut expedita maiores maxime ullam vitae. Delectus dolorum esse maiores minus
         praesentium quod vitae voluptatem.
-      </div>
-    </div>
+      </section>
+    </article>
 
-    <div ref={projectsRef} className={`${styles.HomeSector} ${styles.closable} ${fired === 2 ? styles.closed : ''}`}>
-      <div className={`${styles.wide}`}>
-        <h3>Projekty</h3>
+    <article ref={projectsRef}
+             className={`${sectorStyles.sector} ${sectorStyles.closable} ${fired === 2 ? sectorStyles.closed : ''}`}>
+      <section className={`${sectorStyles.wide}`}>
+        <header>
+          <h3>Projekty</h3>
+        </header>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam autem consectetur delectus, deserunt
         dolorum expedita harum id iure labore, natus nemo neque nulla odio quia quis, repellendus vero? Atque esse
         fugiat ipsa laboriosam reiciendis? Aut expedita maiores maxime ullam vitae. Delectus dolorum esse maiores minus
         praesentium quod vitae voluptatem.
-      </div>
-      <div className={`${styles.narrow}`}>
+      </section>
+      <section className={`${sectorStyles.narrow}`}>
         <GitHubLogo />
-      </div>
+      </section>
 
-    </div>
+    </article>
 
-    <div ref={hobbyRef}
-         className={`${styles.HomeSector} ${backgrounds.planks} ${themeName === 'dark' ? backgrounds.dark:""}`}>
-      <div className={`${styles.narrow}`}>
+    <article ref={hobbyRef}
+             className={`${sectorStyles.sector} ${backgrounds.planks} ${themeName === 'dark' ? backgrounds.dark : ''}`}>
+      <section className={`${sectorStyles.narrow}`}>
         <AnvilAndHammer fired={fired === 4} />
-      </div>
-      <div className={`${styles.wide} ${styles.bouncing} ${fired === 4 ? styles.bounced : ''}`}>
-        <h3>Hobby</h3>
+      </section>
+      <section className={`${sectorStyles.wide} ${sectorStyles.fading} ${fired === 4 ? '' : sectorStyles.faded}`}>
+        <header>
+          <h3>Hobby</h3>
+        </header>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam autem consectetur delectus, deserunt
         dolorum expedita harum id iure labore, natus nemo neque nulla odio quia quis, repellendus vero? Atque esse
         fugiat ipsa laboriosam reiciendis? Aut expedita maiores maxime ullam vitae. Delectus dolorum esse maiores minus
         praesentium quod vitae voluptatem.
-      </div>
-    </div>
+      </section>
+    </article>
 
-    <div className={`${styles.HomeSector}`}>
-    </div>
+    <article className={`${sectorStyles.sector}`}>
+    </article>
 
   </>;
 };
