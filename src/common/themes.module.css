@@ -1,0 +1,28 @@
+
+
+.light {
+
+    --header-primary: rgb(255, 255, 255);
+    --header-bg: rgb(0, 0, 0);
+
+
+    --primary: rgb(0, 0, 0);
+    --secondary: rgb(94, 94, 94);
+    --bg: rgb(255, 255, 255);
+    --highlight: rgb(22, 70, 136);
+
+    --theme-change: color 700ms ease-in-out, background-color 700ms ease-in-out;
+}
+
+.dark {
+    --header-primary: rgb(227, 199, 161);
+    --header-bg: #101010;
+
+
+    --primary: rgb(246, 215, 160);
+    --secondary: rgb(10, 39, 70);
+    --bg: rgb(38, 38, 42);
+    --highlight: rgb(22, 70, 136);
+
+    --theme-change: color 700ms ease-in-out, background-color 700ms ease-in-out;
+}

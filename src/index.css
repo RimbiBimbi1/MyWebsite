@@ -22,3 +22,28 @@ code {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+
+}
+
+a:active{
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+

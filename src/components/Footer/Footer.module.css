@@ -6,6 +6,7 @@
 
     padding: 1rem var(--sidePadding);
 
-    background-color: black;
-    color: white;
+    background-color: var(--header-bg);
+    color: var(--header-primary);
+    transition: var(--theme-change);
 }

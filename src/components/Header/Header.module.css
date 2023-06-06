@@ -1,17 +1,73 @@
-.Header{
+.Header {
     position: sticky;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     z-index: 100;
     top: 0;
     left: 0;
 
     padding: 0 var(--sidePadding);
 
-    background-color: rgb(0, 0, 0);
+    background-color: var(--header-bg);
+    color: var(--header-primary);
+
+
+    transition: var(--theme-change);
+
+    /*background-color: #000000;*/
+    /*color: #ffffff;*/
 
     /*mix-blend-mode: difference;*/
 }
 
-.Header > h2{
-    color: #ffffff;
+/*.Header > h2 {*/
+    /*color: #ffffff;*/
     /*mix-blend-mode: multiply;*/
+/*}*/
+
+.banner{
+    width: 25%
+}
+
+.menu {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+
+
+
+}
+
+.menu > li {
+    display: flex;
+    transition: background-color 300ms ease;
+}
+
+.menu > li:hover:not(:first-child){
+    cursor: pointer;
+    background-color: var(--highlight);
+    /*translate: -1px -1px;*/
+    /*text-shadow: 2px 2px 2px rgb(255, 172, 52);*/
+
+}
+
+.menu > li > * {
+    padding: 0.5rem 1rem;
+}
+
+.themeIcon{
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    font-size: 1.5rem;
+    line-height: 1em;
+
 }

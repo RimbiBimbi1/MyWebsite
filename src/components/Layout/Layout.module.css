@@ -8,5 +8,10 @@
 
     gap: 3rem;
 
-    background-color: #fff;
+
+    background-color: var(--bg);
+    color: var(--primary);
+
+    transition: var(--theme-change);
+
 }
