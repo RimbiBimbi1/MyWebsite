@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 0 1rem;
+    line-height: 2rem;
+
+
+    background-color: var(--bg);
+    color: var(--primary);
+    border-radius: 1rem;
+    border: 1px solid var(--primary);
+    transition: var(--theme-change), border 700ms ease-in-out;
+}
