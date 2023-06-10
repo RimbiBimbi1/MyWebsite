@@ -49,8 +49,8 @@ export const Home = () => {
         fugiat ipsa laboriosam reiciendis? Aut expedita maiores maxime ullam vitae. Delectus dolorum esse maiores minus
         praesentium quod vitae voluptatem.
       </section>
-      <section className={`${sectorStyles.narrow}`}>
-        <img className={styles.photo} src={photo} alt='Moje zdjęcie' />
+      <section className={`${sectorStyles.narrow} ${sectorStyles.linkImage}`}>
+        <img  src={photo} alt='Moje zdjęcie' />
       </section>
     </article>
 

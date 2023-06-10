@@ -24,7 +24,8 @@
 }
 
 .logo{
-    fill: var(--primary);
+    /*fill: var(--primary);*/
+    /*fill: #7c25af;*/
     transition: fill 500ms ease-in-out;
 }
 

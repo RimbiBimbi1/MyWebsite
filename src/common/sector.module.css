@@ -1,11 +1,11 @@
-.sector{
+.sector {
     display: flex;
     flex-direction: row;
 
     overflow: hidden;
 
     width: 100%;
-    height: 25rem;
+    min-height: 25rem;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -17,55 +17,56 @@
     justify-content: space-between;
 }
 
-.closable :is(.wide , .narrow){
+.closable :is(.wide , .narrow) {
     opacity: 0;
     transition: translate 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.closable > :last-child{
+.closable > :last-child {
     translate: 100% 0;
 }
-.closable > :first-child{
+
+.closable > :first-child {
     translate: -100% 0;
 }
 
-.closed > :is(.wide , .narrow){
+.closed > :is(.wide , .narrow) {
     translate: 0;
     opacity: 1;
 }
 
-.fading{
+.fading {
     opacity: 1;
     transform: translateY(0);
 
     transition: opacity 700ms ease, transform 700ms ease;
 }
 
-.faded{
+.faded {
     transform: translateY(-5rem);
     opacity: 0;
 }
 
-.wide{
+.wide {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    flex-basis: 70%;
     /*background-color: #f0f0f0;*/
     padding: 2rem;
 }
 
-.narrow{
+.narrow {
     display: flex;
     justify-content: center;
     align-items: center;
 
 
-    max-width: 30%;
+    flex-basis: 30%;
 
     overflow: hidden;
 }
 
-.narrow > .photo{
+.narrow > .photo {
     min-height: 100%;
     min-width: 100%;
 
@@ -73,7 +74,8 @@
 
 }
 
-.linkImage{
+
+.linkImage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,13 +83,13 @@
 
 }
 
-.linkImage > img{
+.linkImage > img {
     padding: 5%;
     max-width: 100%;
     max-height: 100%;
     transition: transform 500ms ease;
 }
 
-.linkImage > img:hover{
+.linkImage > img:hover {
     transform: scale(105%);
 }
