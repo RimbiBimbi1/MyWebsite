@@ -1,0 +1,145 @@
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 10%;
+}
+
+form > div {
+    padding: 0.5rem;
+}
+
+.form label {
+    padding: 0.25rem 0;
+}
+
+.form :is(input, textarea) {
+    appearance: none;
+    box-shadow: none;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--bg);
+    color: var(--primary);
+    font-size: 1rem;
+
+    transition: var(--theme-change), border 700ms ease-in-out;
+}
+
+.form :is(input, textarea):focus {
+    outline: 1px solid var(--highlight);
+}
+
+.form textarea {
+    max-width: 100%;
+    min-height: 10rem;
+    resize: vertical;
+
+}
+
+.buttons {
+    justify-content: space-between;
+}
+
+.form button {
+    appearance: none;
+
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 2rem;
+
+
+    font-weight: 500;
+    color: var(--primary);
+
+    /*box-shadow: 0 5px 3px 0 rgba(66, 68, 90, 1);*/
+    /*-webkit-box-shadow: 0 5px 3px 0 rgba(66, 68, 90, 1);*/
+    /*-moz-box-shadow: 5px 3px 0 rgba(66, 68, 90, 1);*/
+
+    position: relative;
+    z-index: 0;
+    transition: var(--theme-change), border 700ms ease-in-out, translate ease 0.05s;
+    background-color: var(--bg);
+}
+
+.form button::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    transition: width ease-in-out 0.2s, left ease-in-out 0.2s;
+    border-radius: 2rem;
+    background-color: var(--secondary);
+
+}
+
+.form button:active {
+    translate: 0 2px;
+
+}
+
+.form button:hover {
+    cursor: pointer;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.form button:hover::before {
+    width: 100%;
+    left: 0
+}
+
+
+.overlay {
+    position: absolute;
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--bg);
+    color: var(--primary);
+
+    inset: 0;
+    width: 50%;
+    padding: 10%;
+
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    transition: opacity 500ms ease-in-out;
+}
+.overlay::backdrop{
+    content: "";
+    background-color: black;
+    opacity: 50%;
+
+}
+
+.overlay:not([open]){
+    opacity: 0;
+    pointer-events: none;
+    transition: none;
+
+}
+
+.link{
+    color: var(--link);
+    transition: color 250ms ease-in-out;
+}
+
+.link:hover{
+    color: var(--highlight);
+
+}
+
+@media screen and (max-width: 700px) {
+    .form{
+        margin: 1rem 0;
+    }
+}

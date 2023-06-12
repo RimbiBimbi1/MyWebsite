@@ -4,7 +4,6 @@
 
     margin: auto;
 
-    gap: 3rem;
 
 
     background-color: var(--bg);
@@ -17,4 +16,9 @@
 .container > * {
     padding-left: 5%;
     padding-right: 5%;
+
+}
+
+.container > article{
+    margin-bottom: 3rem;
 }

@@ -19,6 +19,16 @@
     transform: scale(110%);
 }
 
+.gnLink{
+    font-weight: 500;
+    color: rgb(157, 157, 157);
+}
+
+.gnLink:hover{
+    color: rgb(164, 227, 0);
+
+}
+
 /*@keyframes rotate {*/
 /*    from{}*/
 /*    to{*/

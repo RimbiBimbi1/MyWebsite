@@ -5,9 +5,9 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden ;
+    overflow-x: hidden;
+    background-color: black;
 }
-
 
 
 code {
@@ -23,27 +23,36 @@ code {
     box-sizing: border-box;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
-}
 
-a:hover{
 
 }
 
-a:active{
+a:hover {
 
 }
 
-.row{
+a:active {
+
+}
+
+.row {
     display: flex;
     flex-direction: row;
 }
 
-.column{
+.column {
     display: flex;
     flex-direction: column;
 }
 
 
+button, input, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+input:-webkit-autofill{
+    background-color: var(--bg) !important;
+}

@@ -17,6 +17,10 @@
     justify-content: space-between;
 }
 
+.reversed {
+    flex-direction: row-reverse;
+}
+
 .closable :is(.wide , .narrow) {
     opacity: 0;
     transition: translate 1s ease-in-out, opacity 1s ease-in-out;
@@ -92,4 +96,25 @@
 
 .linkImage > img:hover {
     transform: scale(105%);
+}
+
+@media screen and (max-width: 700px) {
+    .sector,
+    .reversed {
+        flex-direction: column;
+        /*flex-wrap: wrap;*/
+        /*text-align: justify;*/
+    }
+
+
+    .sector :is(.wide, .narrow) {
+        padding: 1rem 0;
+        flex: 100% 0 0;
+
+    }
+
+    .sector .narrow {
+        overflow: visible
+    }
+
 }

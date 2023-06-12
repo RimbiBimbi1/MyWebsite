@@ -8,5 +8,5 @@ export const ScrollTop = () => {
     window.scrollTo(0, 0);
   }, [path]);
 
-  return <Outlet/>
+  return <Outlet />;
 };

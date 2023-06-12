@@ -5,28 +5,28 @@ import { JustResearchLogo } from '../../animated/JustResearchLogo/JustResearchLo
 import { PaperSheet } from '../../animated/PaperSheet/PaperSheet';
 import cookie from '../../images/cookie.png';
 import gnNews from '../../images/gnNews.png';
-import reactLogo from '../../images/react.svg';
 import { Tags } from '../../components/Tags/Tags';
 
 export const Projects = () => {
-    return <>
+  return (
+    <>
       <header className={backgrounds.brightGradient}>
         <h2>Projekty grupowe</h2>
       </header>
       <article
-        // className={`${backgrounds.brightGradient}`}
+      // className={`${backgrounds.brightGradient}`}
       >
         <main className={`${sectorStyles.sector}`}>
           <section className={`${sectorStyles.wide}`}>
             <header>
-              <h3>
-                JustResearch (11.2022 - 06.2023)
-              </h3>
+              <h3>JustResearch (11.2022 - 06.2023)</h3>
             </header>
             <main>
               <p>
-                Projekt grupowy stworzony w ramach przedmiotu "Programowanie Zespołowe".<br />
-                JustResearch to tablica ogłoszeń poświęcona badaniom naukowym.<br />
+                Projekt grupowy stworzony w ramach przedmiotu "Programowanie Zespołowe".
+                <br />
+                JustResearch to tablica ogłoszeń poświęcona badaniom naukowym.
+                <br />
                 Ma na celu pomóc badaczom znaleźć osoby chętne do wzięcia udziału w badaniu.
               </p>
 
@@ -43,14 +43,12 @@ export const Projects = () => {
       </article>
 
       <article
-        // className={`${backgrounds.brightGradient}`}
+      // className={`${backgrounds.brightGradient}`}
       >
         <main className={`${sectorStyles.sector}`}>
           <section className={`${sectorStyles.wide}`}>
             <header>
-              <h3>
-                Tablica ogłoszeń (07.2022 - 09.2022)
-              </h3>
+              <h3>Tablica ogłoszeń (07.2022 - 09.2022)</h3>
             </header>
             <main>
               <p>
@@ -65,18 +63,19 @@ export const Projects = () => {
             </main>
           </section>
           <section className={`${sectorStyles.narrow}`}>
-            <a href='https://github.com/JasminEnjoyers'
-               target={'_blank'}
-               rel={'noreferrer'}
-               className={styles.reactLogo}
+            <a
+              href="https://github.com/JasminEnjoyers"
+              target={'_blank'}
+              rel={'noreferrer'}
+              className={styles.reactLogo}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348">
                 <title>React Logo</title>
-                <circle cx="0" cy="0" r="2.05" fill="#61dafb"/>
+                <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
                 <g stroke="#61dafb" strokeWidth="1" fill="none">
-                  <ellipse rx="11" ry="4.2"/>
-                  <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
-                  <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
+                  <ellipse rx="11" ry="4.2" />
+                  <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                  <ellipse rx="11" ry="4.2" transform="rotate(120)" />
                 </g>
               </svg>
             </a>
@@ -92,14 +91,15 @@ export const Projects = () => {
         <main className={`${sectorStyles.sector}`}>
           <section className={`${sectorStyles.wide}`}>
             <header>
-              <h3>
-                Image Procesing TestBed (03.2023 - teraz)
-              </h3>
+              <h3>Image Procesing TestBed (03.2023 - teraz)</h3>
             </header>
             <main>
               <p>
-                Aplikacja stworzona do testowania i zapoznania się z algorytmami służącymi do przetwarzania obrazu.<br />
-                Docelowo ma ona obliczać wymiary obiektu umieszczonego na kartce A4.<br />
+                Aplikacja stworzona do testowania i zapoznania się z algorytmami służącymi do
+                przetwarzania obrazu.
+                <br />
+                Docelowo ma ona obliczać wymiary obiektu umieszczonego na kartce A4.
+                <br />
                 Wyciągnięte wnioski wykorzystam przy mojej pracy inżynierskiej.
               </p>
 
@@ -110,32 +110,42 @@ export const Projects = () => {
             <PaperSheet />
           </section>
         </main>
-
       </article>
 
       <article className={``}>
         <main className={`${sectorStyles.sector}`}>
           <section className={`${sectorStyles.wide}`}>
             <header>
-              <h3>
-                gnNews (04.2023)
-              </h3>
+              <h3>gnNews (04.2023)</h3>
             </header>
             <main>
               <p>
-                Stworzony w ramach procesu rekrutacyjnego, prosty agregator news'ów wykorzystujący newsAPI.<br /><br />
-                Design inspirowany stroną <a
-                href='https://gnstudio.pl' rel={'noreferrer'} target={'_blank'}>gnStudio</a>.
+                Stworzony w ramach procesu rekrutacyjnego, prosty agregator news'ów wykorzystujący
+                newsAPI.
+                <br />
+                <br />
+                Design inspirowany stroną{' '}
+                <a
+                  href="https://gnstudio.pl"
+                  rel={'noreferrer'}
+                  target={'_blank'}
+                  className={styles.gnLink}
+                >
+                  gnStudio
+                </a>
+                .
               </p>
               <Tags>{['JavaScript', 'React', 'Redux', 'Jest']}</Tags>
             </main>
           </section>
           <section className={`${sectorStyles.narrow}`}>
-            <a href='https://rimbibimbi1.github.io/TNAF-zajecia4-MS/'
-               target={'_blank'}
-               rel={'noreferrer'}
-               className={sectorStyles.linkImage}>
-              <img src={gnNews} alt='Cookie' />
+            <a
+              href="https://github.com/RimbiBimbi1/gnNews"
+              target={'_blank'}
+              rel={'noreferrer'}
+              className={sectorStyles.linkImage}
+            >
+              <img src={gnNews} alt="Cookie" />
             </a>
           </section>
         </main>
@@ -145,30 +155,29 @@ export const Projects = () => {
         <main className={`${sectorStyles.sector}`}>
           <section className={`${sectorStyles.wide}`}>
             <header>
-              <h3>
-                Simple Cookie Clicker (02.2023)
-              </h3>
+              <h3>Simple Cookie Clicker (02.2023)</h3>
             </header>
             <main>
               <p>
-                Prosta aplikacja do prokrastynacji i gwałtownego zużycia microswitch'a w swojej myszy. <br />
-                Może też posłyżyć do testowania makr.
+                Prosta aplikacja do prokrastynacji i gwałtownego zużycia microswitch'a w swojej
+                myszy. <br />
+                Może też posłużyć do testowania makr.
               </p>
               <Tags>{['JS', 'HTML5', 'CSS3']}</Tags>
             </main>
           </section>
           <section className={`${sectorStyles.narrow}`}>
-            <a href='https://rimbibimbi1.github.io/TNAF-zajecia4-MS/'
-               target={'_blank'}
-               rel={'noreferrer'}
-               className={sectorStyles.linkImage}>
-              <img src={cookie} alt='Cookie' />
+            <a
+              href="https://rimbibimbi1.github.io/TNAF-zajecia4-MS/"
+              target={'_blank'}
+              rel={'noreferrer'}
+              className={sectorStyles.linkImage}
+            >
+              <img src={cookie} alt="Cookie" />
             </a>
           </section>
         </main>
       </article>
-
-    </>;
-  }
-;
-;
+    </>
+  );
+};
