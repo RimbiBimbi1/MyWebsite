@@ -21,7 +21,7 @@ Aby uruchomić aplikację lokalnie należy w katalogu projektu wywołać polecen
 
 Aplikacja jest także dostępna na github pages pod adresem:
 
-### https://rimbibimbi1.github.io/MyWebsite/
+### https://rimbibimbi1.github.io/my-website/
 
 # Wykorzystane technologie i rozwiązania
 
