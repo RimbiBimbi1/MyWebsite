@@ -1,10 +1,9 @@
 import styles from './Hobby.module.css';
-import backgrounds from '../../common/backgrounds.module.css';
 
 export const Hobby = () => {
   const photosPaths = Array.from(Array(7).keys()).map(item => `gallery/${item}.jpg`);
 
-  const photos = photosPaths.map((path, index) => <img src={path} alt={`photo${index}`} />);
+  const photos = photosPaths.map((path, index) => <img src={path} alt={`kutecos${index}`} />);
 
   const photosWithAnchors = photos.map((photo, index) => (
     <a href={`${photosPaths[index]}`} target={'_blank'} rel={'noreferrer'}>

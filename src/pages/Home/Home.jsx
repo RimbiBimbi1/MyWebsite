@@ -1,4 +1,3 @@
-import styles from './Home.module.css';
 import backgrounds from '../../common/backgrounds.module.css';
 import sectorStyles from '../../common/sector.module.css';
 import { AnvilAndHammer } from '../../animated/AnvilAndHammer/AnvilAndHammer';
@@ -142,9 +141,6 @@ export const Home = () => {
           <AnvilAndHammer fired={fired === 3} />
         </section>
       </article>
-
-      {/*<article className={`${sectorStyles.sector}`}>*/}
-      {/*</article>*/}
     </>
   );
 };
