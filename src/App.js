@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './components/Layout/Layout';
 import { Home } from './pages/Home/Home';
 import { Projects } from './pages/Projects/Projects';
@@ -16,6 +16,7 @@ function App() {
           <Route path={'/projects'} element={<Projects />} />
           <Route path={'/hobby'} element={<Hobby />} />
           <Route path={'/contact'} element={<Contact />} />
+          <Route path={'*'} element={<Navigate to={'/'} />} />
         </Route>
       </Route>
     </Routes>
