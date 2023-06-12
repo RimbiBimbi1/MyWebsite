@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.a0dac88d.css",
-    "main.js": "/my-website/static/js/main.fa2d6fd5.js",
-    "static/media/photo.png": "/my-website/static/media/photo.9cbc0c6d126d62d56e4e.png",
-    "static/media/before.jpg": "/my-website/static/media/before.2eab36f4038e464bf25f.jpg",
-    "static/media/logo512.png": "/my-website/static/media/logo512.c90c7dd329f4c7e031dc.png",
-    "static/media/after.jpg": "/my-website/static/media/after.41d139f0c55e36b964c6.jpg",
-    "static/media/cookie.png": "/my-website/static/media/cookie.98c35574d61f96a5d2ca.png",
-    "static/media/gnNews.png": "/my-website/static/media/gnNews.54ca364d392811f1bd80.png",
-    "static/media/anvil.svg": "/my-website/static/media/anvil.f878b43162f8b1e4af6b.svg",
-    "static/media/umkLogo.svg": "/my-website/static/media/umkLogo.fc7e3e383641a1399938eab42369c825.svg",
-    "static/media/gitHubLogo.svg": "/my-website/static/media/gitHubLogo.62614589d4123491e378ba44ce0a4f85.svg",
-    "static/media/hammer.svg": "/my-website/static/media/hammer.f8ad9108ae7d23705b4a.svg",
-    "index.html": "/my-website/index.html",
-    "main.a0dac88d.css.map": "/my-website/static/css/main.a0dac88d.css.map",
-    "main.fa2d6fd5.js.map": "/my-website/static/js/main.fa2d6fd5.js.map"
+    "main.css": "/static/css/main.aa449647.css",
+    "main.js": "/static/js/main.90aced89.js",
+    "static/media/photo.png": "/static/media/photo.9cbc0c6d126d62d56e4e.png",
+    "static/media/before.jpg": "/static/media/before.2eab36f4038e464bf25f.jpg",
+    "static/media/logo512.png": "/static/media/logo512.c90c7dd329f4c7e031dc.png",
+    "static/media/after.jpg": "/static/media/after.41d139f0c55e36b964c6.jpg",
+    "static/media/cookie.png": "/static/media/cookie.98c35574d61f96a5d2ca.png",
+    "static/media/gnNews.png": "/static/media/gnNews.54ca364d392811f1bd80.png",
+    "static/media/anvil.svg": "/static/media/anvil.f878b43162f8b1e4af6b.svg",
+    "static/media/umkLogo.svg": "/static/media/umkLogo.fc7e3e383641a1399938eab42369c825.svg",
+    "static/media/gitHubLogo.svg": "/static/media/gitHubLogo.62614589d4123491e378ba44ce0a4f85.svg",
+    "static/media/hammer.svg": "/static/media/hammer.f8ad9108ae7d23705b4a.svg",
+    "index.html": "/index.html",
+    "main.aa449647.css.map": "/static/css/main.aa449647.css.map",
+    "main.90aced89.js.map": "/static/js/main.90aced89.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0dac88d.css",
-    "static/js/main.fa2d6fd5.js"
+    "static/css/main.aa449647.css",
+    "static/js/main.90aced89.js"
   ]
 }
