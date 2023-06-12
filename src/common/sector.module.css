@@ -1,0 +1,120 @@
+.sector {
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+
+    width: 100%;
+    min-height: 25rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sector main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.closable :is(.wide , .narrow) {
+    opacity: 0;
+    transition: translate 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.closable > :last-child {
+    translate: 100% 0;
+}
+
+.closable > :first-child {
+    translate: -100% 0;
+}
+
+.closed > :is(.wide , .narrow) {
+    translate: 0;
+    opacity: 1;
+}
+
+.fading {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.faded {
+    transform: translateY(-5rem);
+    opacity: 0;
+}
+
+.wide {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    /*background-color: #f0f0f0;*/
+    padding: 2rem;
+}
+
+.narrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    flex-basis: 30%;
+
+    overflow: hidden;
+}
+
+.narrow > .photo {
+    min-height: 100%;
+    min-width: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.linkImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.linkImage > img {
+    padding: 5%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 500ms ease;
+}
+
+.linkImage > img:hover {
+    transform: scale(105%);
+}
+
+@media screen and (max-width: 700px) {
+    .sector,
+    .reversed {
+        flex-direction: column;
+        /*flex-wrap: wrap;*/
+        /*text-align: justify;*/
+    }
+
+
+    .sector :is(.wide, .narrow) {
+        padding: 1rem 0;
+        flex: 100% 0 0;
+
+    }
+
+    .sector .narrow {
+        overflow: visible
+    }
+
+}

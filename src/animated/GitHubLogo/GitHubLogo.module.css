@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight{
+    transition: all 300ms ease;
+}
+
+.highlight:hover{
+    transform: scale(105%);
+
+    color: #7c25af;
+
+}
+
+.highlight svg{
+    padding: 7%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    fill: var(--primary);
+    transition: fill 300ms ease;
+}
+
+.highlight:hover svg{
+    fill: var(--header-secondary);
+}

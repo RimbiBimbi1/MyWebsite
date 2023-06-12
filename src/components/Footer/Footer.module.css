@@ -1,0 +1,13 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    background-color: var(--header-bg);
+    color: var(--header-primary);
+    transition: var(--theme-change);
+}

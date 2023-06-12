@@ -1,0 +1,127 @@
+.Header {
+    position: sticky;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    /*padding: 0 var(--sidePadding);*/
+
+    background-color: var(--header-bg);
+    color: var(--header-primary);
+
+
+    transition: var(--theme-change);
+
+    /*background-color: #000000;*/
+    /*color: #ffffff;*/
+
+    /*mix-blend-mode: difference;*/
+}
+
+/*.Header > h2 {*/
+    /*color: #ffffff;*/
+    /*mix-blend-mode: multiply;*/
+/*}*/
+
+.banner{
+    min-width: 25%
+}
+
+.menu {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+
+
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+
+
+
+}
+
+.menu > li {
+    display: flex;
+    transition: background-color 300ms ease;
+}
+
+.menu > li:hover{
+    cursor: pointer;
+    background-color: var(--header-secondary);
+    /*translate: -1px -1px;*/
+    /*text-shadow: 2px 2px 2px rgb(255, 172, 52);*/
+
+}
+
+.menu > li > * {
+    padding: 0.5rem 1rem;
+}
+
+.themeIcon{
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    font-size: 1.5rem;
+    line-height: 1em;
+
+}
+.menuButton{
+    display: none;
+    appearance: none;
+    border: none;
+
+}
+
+.open{}
+
+@media screen and (max-width: 700px){
+    .Header{
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .menuButton{
+        display: block;
+
+        padding: 0.5rem;
+        width: 100%;
+        border-radius: 5px;
+
+        /*font-size: 2rem;*/
+        /*line-height: 1rem;*/
+        letter-spacing: 0.5rem;
+        font-weight: 700;
+
+        background-color: var(--bg);
+        color: var(--primary);
+
+        cursor: pointer;
+    }
+
+    .menu{
+
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+
+        max-height: 0;
+        transition: max-height 500ms ease;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    .menu.open{
+        max-height: 17rem;
+        pointer-events: all;
+    }
+
+}
