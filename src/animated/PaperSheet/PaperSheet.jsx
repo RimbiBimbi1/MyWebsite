@@ -7,8 +7,6 @@ export const PaperSheet = () => {
       <a href="https://github.com/RimbiBimbi1/IPT" target={'_blank'}>
         <img src={before} alt="Zdjęcie przed obróbką" className={styles.photo} />
       </a>
-
-      {/*<span className={}></span>*/}
     </div>
   );
 };

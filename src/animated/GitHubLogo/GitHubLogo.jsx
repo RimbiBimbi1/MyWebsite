@@ -1,4 +1,3 @@
-import ghLogo from './gitHubLogo.svg';
 import styles from './GitHubLogo.module.css';
 
 export const GitHubLogo = () => {

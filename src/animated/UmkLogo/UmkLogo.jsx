@@ -1,5 +1,4 @@
 import styles from './UmkLogo.module.css';
-
 import logo from './umkLogo.svg';
 
 export const UmkLogo = ({ fired }) => {
