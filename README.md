@@ -19,9 +19,9 @@ Aby uruchomić aplikację lokalnie należy w katalogu projektu wywołać polecen
 ### `npm start`
 
 
-Aplikacja jest także dostępna na github pages pod adresem:
+Aplikacja jest także dostępna na platformie Netlify pod adresem:
 
-### https://rimbibimbi1.github.io/my-website/
+### https://rimbibimbi.netlify.app
 
 # Wykorzystane technologie i rozwiązania
 
@@ -34,6 +34,5 @@ Obsługa wysyłki maili. Dla uniknięcia potencjalnego spamu.
 ### LocalStorage
 Przechowywanie ustawiionego schematu kolorów.
 
-### GitHub Pages z użyciem react-gh-pages 
-https://github.com/gitname/react-gh-pages
-Deploy na ghPages ze względu na znajomość i darmowość platformy i łatwość wykonania.
+### Netlify
+Deploy na Netlify ze względu na znajomość i darmowość platformy i łatwość wykonania.
