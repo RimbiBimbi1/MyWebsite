@@ -16,6 +16,8 @@ wyżej podstron, oraz na zmianę schematu kolorów.
 
 Aby uruchomić aplikację lokalnie należy w katalogu projektu wywołać polecenie:
 
+### `npm i`
+
 ### `npm start`
 
 
