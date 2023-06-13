@@ -1,4 +1,4 @@
-# O aplikacji
+## O aplikacji
 
 Jest to moje portfolio. Strona składa się z czterech podstron:
 
@@ -12,7 +12,7 @@ Jest to moje portfolio. Strona składa się z czterech podstron:
 Strona posiada współdzielony między podstronami nagłówek, pozwalający przejść do mojego profilu na LinkedIn, opisanych
 wyżej podstron, oraz na zmianę schematu kolorów.
 
-# Uruchomienie aplikacji
+## Uruchomienie aplikacji
 
 Aby uruchomić aplikację lokalnie należy w katalogu projektu wywołać polecenie:
 
@@ -25,7 +25,7 @@ Aplikacja jest także dostępna na platformie Netlify pod adresem:
 
 ### https://rimbibimbi.netlify.app
 
-# Wykorzystane technologie i rozwiązania
+## Wykorzystane technologie i rozwiązania
 
 ### React.js
 Strona nie jest zbyt skomplikowana, ale jeśli dobrze pamiętam było to wymogiem.
