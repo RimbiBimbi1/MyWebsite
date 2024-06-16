@@ -1,6 +1,6 @@
 ## O aplikacji
 
-Jest to moje portfolio. Strona składa się z czterech podstron:
+Strona internetowa będąca pewną alternatywną, estetyczniejszą formą mojego CV. Strona składa się z czterech podstron:
 
 1. Strona główna - składa się z sekcji streszczających niektóre informacje o mnie ( aktualnie lorem ipsum xd). Sekcje
    urozmaicone są ilustracjami i prostymi, lecz satysfakcjonującymi animacjami.
@@ -14,12 +14,16 @@ wyżej podstron, oraz na zmianę schematu kolorów.
 
 ## Uruchomienie aplikacji
 
-Aby uruchomić aplikację lokalnie należy w katalogu projektu wywołać polecenie:
+Do uruchomienia aplikacji w trybie developerskim wymagany jest zainstalowany node.js i npm.
+Aby uruchomić aplikację lokalnie należy pobrać pliki źródłowe.
+Następnie, wewnątrz katalogu projektu wykonać polecenia:
 
-### `npm i`
+### `npm install`
 
 ### `npm start`
 
+Wówczas powinien zostać uruchomiony serwer, a aplikacja powinna być dostępna pod adresem:
+### http://localhost:3000.
 
 Aplikacja jest także dostępna na platformie Netlify pod adresem:
 
@@ -28,10 +32,10 @@ Aplikacja jest także dostępna na platformie Netlify pod adresem:
 ## Wykorzystane technologie i rozwiązania
 
 ### React.js
-Strona nie jest zbyt skomplikowana, ale jeśli dobrze pamiętam było to wymogiem.
+Strona nie jest zbyt skomplikowana, a użycie react.js jest zdecydowanym overkillem. Użycie tej technologii miało charakter czysto ćwiczeniowy.
 
 ### HeroTofu
-Obsługa wysyłki maili. Dla uniknięcia potencjalnego spamu.
+Obsługa wysyłki maili. Funkcjonalność działa (a przynajmniej działała zaraz po upublicznieniu strony), jednak nie odwiedzam swojej skrzynki na HeroTofu, więc efektywnie maile do mnie nie docierają.
 
 ### LocalStorage
 Przechowywanie ustawiionego schematu kolorów.
